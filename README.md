@@ -28,16 +28,35 @@ Target: `price`
 
 ## Run Locally
 
-1. Install dependencies: `pip install -r requirements.txt`
-2. Start server: `uvicorn app.main:app --reload`
-3. Swagger UI: Go to `http://127.0.0.1:8000/docs`
+1. Create virtual environment  
+`python -m venv venv`
+
+2. Activate virtual environment  
+
+   Mac / Linux:
+   `source venv/bin/activate`
+   
+   Windows:
+   `venv\Scripts\activate`
+
+3. Install dependencies  
+`pip install -r requirements.txt`
+
+4. Start server  
+`uvicorn app.main:app --reload`
+
+5. Swagger UI  
+Open `http://127.0.0.1:8000/docs`
 
 ---
 
 ## Docker
 
-1. Build: `docker build -t housing-api .`
-2. Run: `docker run -p 8000:8000 housing-api`
+1. Build image  
+`docker build -t housing-api .`
+
+2. Run container  
+`docker run -p 8000:8000 housing-api`
 
 ---
 
@@ -128,6 +147,7 @@ Target: `price`
     }
    ```
    
+
 
 
 
